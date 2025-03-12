@@ -6,13 +6,11 @@ import { I18n } from "aws-amplify/utils";
 import { Amplify } from "aws-amplify";
 import { ResourcesConfig } from "@aws-amplify/core";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-const userPoolClientId = import.meta.env.VITE_REACT_APP_USER_POOL_CLIENT_ID;
-const userPoolId = import.meta.env.VITE_REACT_APP_USER_POOL_ID;
 const awsConfig: ResourcesConfig = {
   Auth: {
     Cognito: {
-      userPoolClientId: userPoolClientId,
-      userPoolId: userPoolId,
+      userPoolClientId: "ap-northeast-1_ekMic15QY",
+      userPoolId: "2t5tm2cd247t2jjnbu4q9qm7h6",
     },
   },
 };
